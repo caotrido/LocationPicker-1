@@ -142,12 +142,12 @@ open class LocationPickerViewController: UIViewController {
 	open override func viewDidLoad() {
 		super.viewDidLoad()
 
-        if #available(iOS 13.0, *), let navigationController = navigationController {
-            let appearance = navigationController.navigationBar.standardAppearance
-            appearance.backgroundColor = navigationController.navigationBar.barTintColor
-            navigationItem.standardAppearance = appearance
-            navigationItem.scrollEdgeAppearance = appearance
-        }
+//        if #available(iOS 13.0, *), let navigationController = navigationController {
+//            let appearance = navigationController.navigationBar.standardAppearance
+//            appearance.backgroundColor = navigationController.navigationBar.barTintColor
+//            navigationItem.standardAppearance = appearance
+//            navigationItem.scrollEdgeAppearance = appearance
+//        }
 		
 		locationManager.delegate = self
 		mapView.delegate = self
